@@ -3,13 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>HW-43</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HW-44</title>
   </head>
   <body>
-    
-    <script src="/vendor/jquery/jquery-3.1.1.min.js"></script>
+    <div class="container">
+      <header class="header"><a class="header__logo">Countries</a>
+        <nav class="header__menu"><span class="menu__btn" href=""><img src="images/mobile-btn-01.svg" alt="mobile-btn"></span>
+          <ul class="menu__list">
+            <li class="list__item"><a class="item__a" href="#">Countries</a></li>
+            <li class="list__item"><a class="item__a" href="#">Capital city</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h2 class="content__title" id="title"></h2>
+      <div class="content__wrap">
+        <div class="content__wrap__item col-md-3 col-sm-4 col-xs-4"></div>
+      </div>
+    </div>
+    <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
