@@ -6,7 +6,7 @@ $(document).ready(function(){
 				$('#title').text('Countries');
 				$('.preview__wrap').empty(); 
 				$.each(data, function(index, post){
-					var card = '<article class="preview"><h3>'+post.name+'</h3><img class="img-responsive" src="'+post.flag+'"></article>';
+					var card = '<article class="preview"><h3>Name: '+post.name+'</h3><p>Region: '+post.region+'</p><p>Flag:</p><img class="img-responsive" src="'+post.flag+'"></article>';
 					$('.preview__wrap').append(card);
 				});
 			}
@@ -19,7 +19,7 @@ $(document).ready(function(){
 				$('#title').text('Capital city');
 				$('.preview__wrap').empty(); 
 				$.each(data, function(index, post){
-					var card = '<article class="preview"><h3>'+post.capital+'</h3></article>';
+					var card = '<article class="preview"><h3>Countries: '+post.name+'</h3><h3>Capital: '+post.capital+'</h3></article>';
 					$('.preview__wrap').append(card);
 				});
 			}
